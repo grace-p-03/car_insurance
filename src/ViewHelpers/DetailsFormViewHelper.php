@@ -2,7 +2,7 @@
 
 namespace App\ViewHelpers;
 
-class QuoteViewHelper
+class DetailsFormViewHelper
 {
 
     public static function displayNameInput(): string
@@ -11,6 +11,7 @@ class QuoteViewHelper
         $result = '<form action="/Quote/" method="post">';
         $result .= '<label for="name">Name</label>';
         $result .= '<input type="text" id="name" name="name">';
+        return $result;
 
     }
 }

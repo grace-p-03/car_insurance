@@ -33,5 +33,9 @@ return function (ContainerBuilder $containerBuilder) {
         return $renderer;
     };
 
+    $container['HomePageController'] = DI\factory('\App\Factories\HomePageControllerFactory');
+    $container['CarTypeModelFactory'] = DI\factory('\App\Factories\CarTypeModelFactory');
+    $container['CoverTypeModelFactory'] = DI\factory('\App\Factories\CoverTypeModelFactory');
+
     $containerBuilder->addDefinitions($container);
 };
